@@ -19,8 +19,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        String parseID="HEpMWo74qsUhonIWbcYYDMVrIw9fYZH7G7sem0OA";
-        String parseKey="yqomyfxq5hVBg2GJNDvq4E7jteyVqQGUFFi4mzmj";
+
         Parse.enableLocalDatastore(getApplicationContext());
         Parse.initialize(this, parseID, parseKey);
         ParseInstallation.getCurrentInstallation().saveInBackground();
